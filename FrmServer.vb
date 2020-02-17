@@ -42,7 +42,7 @@ Public Class FrmServer
                 End If
             End While
         Catch ex As Exception
-            RichTextBox1.Text += "Connected() Exception : " + ex.Message + vbNewLine
+            Debug.Print("Connected() Exception : " + ex.Message)
             Disconnected()
         End Try
         Return True
